@@ -11,6 +11,9 @@ export const useProducts = () => {
   const [products, setProducts] = useState<ProductData[]>([]);
   const [error, setError] = useState<Error | null>(null);
 
+  /**
+   * NEED TO ADD LOADING STUFF HERE.
+   */
   useEffect(() => {
     const asyncFetch = async () => {
       try {

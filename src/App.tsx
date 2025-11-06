@@ -1,5 +1,5 @@
 import './App.css'
-import { useProducts } from './services/useProducts'
+import { useProducts } from './hooks/useProducts'
 
 function App() {
   const { products, error } = useProducts();
