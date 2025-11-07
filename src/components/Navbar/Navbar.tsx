@@ -1,3 +1,5 @@
+import { NavbarCart } from "./NavbarCart"
+
 const navbarLinks = [
     {label: "Home", href: "/"},
     {label: "Men", href: "/men"},
@@ -17,7 +19,7 @@ export const Navbar = () => {
       <div className="md:flex md:items-center md:gap-12">
         <a className="block text-teal-600" href="/">
           <span className="sr-only">Home</span>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="size-6">   <path  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /> </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5} className="size-6">   <path  d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" /> </svg>
         </a>
       </div>
 
@@ -41,14 +43,14 @@ export const Navbar = () => {
             Login
           </a>
         </div>
-
-        <div className="block md:hidden">
+                <NavbarCart />
+        {/* <div className="block md:hidden">
           <button className="rounded-sm bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
             <svg xmlns="http://www.w3.org/2000/svg" className="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path  d="M4 6h16M4 12h16M4 18h16"></path>
             </svg>
           </button>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>
